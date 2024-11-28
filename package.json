@@ -18,7 +18,8 @@
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
-    "build:docs": "typedoc"
+    "build:docs": "typedoc",
+    "release": "release-it"
   },
   "peerDependencies": {
     "fabric": ">=6"
@@ -64,11 +65,31 @@
     "@size-limit/preset-small-lib": "^11.1.6",
     "fabric": ">=6",
     "husky": "^9.1.7",
+    "release-it": "^17.10.0",
     "size-limit": "^11.1.6",
     "tsdx": "^0.14.1",
     "tslib": "^2.8.1",
-    "typedoc": "^0.27.1",
+    "typedoc": "^0.26",
     "typedoc-material-theme": "^1.2.0",
     "typescript": "^5.7.2"
+  },
+  "release-it": {
+    "$schema": "https://unpkg.com/release-it/schema/release-it.json",
+    "git": {
+      "tagName": "v${version}",
+      "commitMessage": "chore: release ${version}",
+      "requireCleanWorkingDir": true,
+      "requireBranch": "main"
+    },
+    "npm": {
+      "publish": true
+    },
+    "github": {
+      "release": true
+    }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   }
 }
