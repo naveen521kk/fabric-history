@@ -35,7 +35,20 @@
     "trailingComma": "es5"
   },
   "name": "@naveen521kk/fabric-history",
-  "author": "Naveen M K",
+  "author": "Naveen M K <naveen521kk@gmail.com> (naveen521kk)",
+  "description": "Fabric.js canvas history utility",
+  "bugs": {
+    "url": "https://github.com/naveen521kk/fabric-history/issues"
+  },
+  "repository": "https://github.com/naveen521kk/fabric-history",
+  "keywords": [
+    "fabric",
+    "fabricjs",
+    "history",
+    "undo",
+    "redo"
+  ],
+  "homepage": "https://www.naveenmk.me/fabric-history/",
   "module": "dist/fabric-history.esm.js",
   "size-limit": [
     {
