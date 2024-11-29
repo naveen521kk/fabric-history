@@ -105,8 +105,6 @@ class FabricCanvasHistory {
     );
 
     this._applyState(objects);
-
-    console.log({ redo: this.historyRedo, his: this.history });
   }
 
   /**
@@ -123,6 +121,7 @@ class FabricCanvasHistory {
   clear() {
     this.history = [];
     this.historyRedo = [];
+    if (typeof this._callback === 'function') this._callback();
   }
 
   /**
