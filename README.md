@@ -1,8 +1,11 @@
 # Fabric History
 
 This package provides a single class called `FabricCanvasHistory` which
-provides necessary functionality to undo and redo changes in a Fabric.js
+provides the necessary functionality to undo and redo changes in a Fabric.js
 canvas.
+
+See https://fabric-history.syrusdark.cc/ for a live demo using Next.js
+and source code at https://github.com/naveen521kk/fabric-history-example.
 
 ## Installation
 
